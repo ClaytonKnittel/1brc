@@ -4,11 +4,11 @@ Inspired by https://github.com/gunnarmorling/1brc.
 
 ## Rules
 
-* All programming languages allowed.
-* No external libraries that help in nontrivial ways.
-  * Utility libraries are allowed.
-  * If unsure, ask.
-* The rounding of output values must be done using the semantics of IEEE 754 rounding-direction "roundTowardPositive".
+- All programming languages allowed.
+- No external libraries that help in nontrivial ways.
+  - Utility libraries are allowed.
+  - If unsure, ask.
+- The rounding of output values must be done using the semantics of IEEE 754 rounding-direction "roundTowardPositive".
 
 ## How to structure your program
 
@@ -31,6 +31,7 @@ Note that the weather stations should be sorted alphabetically.
 You'll be given a file of newline-separated rows, where each row contains the name of a weather station and a temperature reading at that weather station, separated by a semicolon. The last row of the file will be followed by a newline.
 
 For example, the input file may look like this:
+
 ```
 Abha;-23.0
 Abidjan;29.4
@@ -38,10 +39,19 @@ Abidjan;29.4
 ```
 
 You may assume the following about the format of the input file:
-* The input file is well-formatted and adheres to the following restrictions.
-* The whole input file is valid UTF-8.
-* The name of weather stations is anywhere between 2 - 50 bytes long, and does not contain ';' or '\n' characters.
-  * note: bytes, not characters, which may differ for non-ascii unicode.
-* Temperature readings are between -99.9 and 99.9 (inclusive), always with one fractional digit.
-* There is a maximum of 10,000 unique weather stations.
 
+- The input file is well-formatted and adheres to the following restrictions.
+- The whole input file is valid UTF-8.
+- The name of weather stations is anywhere between 2 - 50 bytes long, and does not contain ';' or '\n' characters.
+  - note: bytes, not characters, which may differ for non-ascii unicode.
+- Temperature readings are between -99.9 and 99.9 (inclusive), always with one fractional digit.
+- There is a maximum of 10,000 unique weather stations.
+
+## Installing FlameGraph
+
+Run the following:
+
+```bash
+git clone --depth=1 https://github.com/brendangregg/FlameGraph.git
+echo "export PATH=\"\$PATH:$(pwd)/FlameGraph\"" >> ~/.bashrc
+```
