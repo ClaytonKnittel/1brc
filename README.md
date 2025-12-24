@@ -47,6 +47,16 @@ You may assume the following about the format of the input file:
 - Temperature readings are between -99.9 and 99.9 (inclusive), always with one fractional digit.
 - There is a maximum of 10,000 unique weather stations.
 
+## Testing
+
+I haven't set up any testing framework, but I've provided an example program in examples/ that you can verify the output of your program against. As long as the outputs match exactly, your code is correct.
+
+You can run the example with:
+
+```bash
+cargo r --release --example simple_parser [-- --input <input_file>]
+```
+
 ## Installing FlameGraph
 
 Run the following:
