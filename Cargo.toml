@@ -8,6 +8,7 @@ profiled = ["dep:pprof"]
 
 [dependencies]
 clap = { version = "4.5.53", features = ["derive"] }
+itertools = "0.14.0"
 pprof = { version = "0.15.0", features = ["flamegraph"], optional = true }
 rand = "0.9.2"
 rand_distr = "0.5.1"
