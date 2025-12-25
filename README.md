@@ -47,6 +47,8 @@ You may assume the following about the format of the input file:
 - Temperature readings are between -99.9 and 99.9 (inclusive), always with one fractional digit.
 - There is a maximum of 10,000 unique weather stations.
 
+Note that your code must work on any file that follows this format, but you may take advantage of the weather stations being chosen from `data/weather_stations.csv`. Optimizations that are tailored for this set of stations are encouraged, but you may not assume the names are from this file.
+
 ## Testing
 
 I haven't set up any testing framework, but I've provided an example program in examples/ that you can verify the output of your program against. As long as the outputs match exactly, your code is correct.
