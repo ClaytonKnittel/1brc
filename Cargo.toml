@@ -13,8 +13,16 @@ pprof = { version = "0.15.0", features = ["flamegraph"], optional = true }
 rand = "0.9.2"
 rand_distr = "0.5.1"
 
+[profile.release]
+debug-assertions = false
+overflow-checks = false
+codegen-units = 1
+lto = "fat"
+panic = "abort"
+
 [profile.profiled]
 inherits = "release"
 opt-level = 3
 debug = 2
 strip = "none"
+lto = "none"
