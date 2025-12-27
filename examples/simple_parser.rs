@@ -12,29 +12,30 @@ use clap::Parser;
 use itertools::Itertools;
 
 struct TemperatureSummary {
-  min: f32,
-  max: f32,
-  total: f32,
+  min: i32,
+  max: i32,
+  total: i64,
   count: u32,
 }
 
 impl TemperatureSummary {
   fn min(&self) -> f32 {
-    self.min
+    self.min as f32 / 10.0
   }
 
   fn max(&self) -> f32 {
-    self.max
+    self.max as f32 / 10.0
   }
 
   fn avg(&self) -> f32 {
-    self.total / self.count as f32
+    (self.total as f64 / 10.0 / self.count as f64) as f32
   }
 
   fn add_reading(&mut self, temp: f32) {
+    let temp = (temp * 10.0).round() as i32;
     self.min = self.min.min(temp);
     self.max = self.max.max(temp);
-    self.total += temp;
+    self.total += temp as i64;
     self.count += 1;
   }
 }
@@ -42,9 +43,9 @@ impl TemperatureSummary {
 impl Default for TemperatureSummary {
   fn default() -> Self {
     Self {
-      min: f32::MAX,
-      max: f32::MIN,
-      total: 0.,
+      min: i32::MAX,
+      max: i32::MIN,
+      total: 0,
       count: 0,
     }
   }
