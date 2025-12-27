@@ -64,3 +64,16 @@ pub fn generate_input<'a, R: Rng>(
     Ok((city.name(), measured_temp))
   }))
 }
+
+pub fn output_lines<R: Rng>(
+  weather_stations: &[City],
+  records: u64,
+  unique_cities: u32,
+  rng: &mut R,
+) -> BrcResult<impl Iterator<Item = BrcResult<String>>> {
+  generate_input(weather_stations, records, unique_cities, rng).map(|measurements| {
+    measurements.map(|measurement| {
+      measurement.map(|(city, measured_temp)| format!("{};{:.1}\n", city, measured_temp))
+    })
+  })
+}

@@ -7,7 +7,7 @@ use std::{
 use clap::Parser;
 
 use brc::{
-  build_input::{generate_input, get_weather_stations},
+  build_input::{get_weather_stations, output_lines},
   error::BrcResult,
 };
 
@@ -32,15 +32,13 @@ fn run() -> BrcResult {
   let weather_stations = get_weather_stations(WEATHER_STATIONS_PATH)?;
 
   let mut output = BufWriter::new(File::create(args.output)?);
-  for measurement in generate_input(
+  for line in output_lines(
     &weather_stations,
     args.records,
     args.unique_cities,
     &mut rng,
   )? {
-    let (city, measured_temp) = measurement?;
-    let line = format!("{};{:.1}\n", city, measured_temp);
-    output.write_all(line.as_bytes())?;
+    output.write_all(line?.as_bytes())?;
   }
   output.flush()?;
 
