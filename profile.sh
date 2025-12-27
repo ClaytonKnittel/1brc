@@ -6,5 +6,5 @@ set -e
 
 cargo b --profile profiled
 rm -f perf.data
-perf record -g --call-graph dwarf -- $@ >/dev/null
+perf record -F 200 --call-graph dwarf -- $@ >/dev/null
 perf script | stackcollapse-perf.pl | flamegraph.pl > brc.svg
