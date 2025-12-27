@@ -2,6 +2,22 @@
 
 Inspired by https://github.com/gunnarmorling/1brc.
 
+# Leaderboard
+
+### Single-Threaded Leaderboard
+
+| Rank | Name     | Best Time (s) | Language |
+|------|----------|---------------|----------|
+| 1    | Claytdog | 14            | Rust     |
+| 2    | jtstogel | ~30           | Rust     |
+| 3    | Pkmalloc | 330           | Java     |
+
+### Multi-Threaded Leaderboard
+
+| Rank | Name | Best Time (s) | Language |
+|------|------|---------------|----------|
+| 1    | -    | -             | -        |
+
 ## Rules
 
 - All programming languages allowed.
