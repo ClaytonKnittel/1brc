@@ -3,9 +3,10 @@ use std::{
   io::{BufRead, BufReader},
 };
 
-use crate::error::{BrcError, BrcResult};
+use rand::{seq::IteratorRandom, Rng};
+use rand_distr::Normal;
 
-const WEATHER_STATIONS_PATH: &str = "data/weather_stations.csv";
+use crate::error::{BrcError, BrcResult};
 
 #[derive(Debug)]
 pub struct City {
@@ -23,8 +24,8 @@ impl City {
   }
 }
 
-pub fn get_weather_stations() -> BrcResult<Vec<City>> {
-  BufReader::new(File::open(WEATHER_STATIONS_PATH)?)
+pub fn get_weather_stations(path: &str) -> BrcResult<Vec<City>> {
+  BufReader::new(File::open(path)?)
     .lines()
     .filter(|line| !line.as_ref().is_ok_and(|line| line.starts_with('#')))
     .map(|line| {
@@ -38,4 +39,28 @@ pub fn get_weather_stations() -> BrcResult<Vec<City>> {
       })
     })
     .collect()
+}
+
+pub fn generate_input<'a, R: Rng>(
+  weather_stations: &'a [City],
+  records: u64,
+  unique_cities: u32,
+  rng: &mut R,
+) -> BrcResult<impl Iterator<Item = BrcResult<(&'a str, f32)>>> {
+  let sampled_stations = weather_stations
+    .iter()
+    .choose_multiple(rng, unique_cities as usize);
+
+  Ok((0..records).map(move |_| {
+    let city = sampled_stations
+      .iter()
+      .choose(rng)
+      .ok_or_else(|| BrcError::new("Unexpected empty weather_stations".to_owned()))?;
+
+    let average_temp = city.average_temperature();
+    let dist = Normal::new(average_temp, 10.)?;
+    let measured_temp = rng.sample(dist).clamp(-99.9, 99.9);
+
+    Ok((city.name(), measured_temp))
+  }))
 }
