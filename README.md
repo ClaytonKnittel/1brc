@@ -8,8 +8,8 @@ Inspired by https://github.com/gunnarmorling/1brc.
 
 | Rank | Name           | Best Time (s) | Language |
 |------|----------------|---------------|----------|
-| 1    | Claytdog       | 14            | Rust     |
-| 2    | jtstogel       | ~30           | Rust     |
+| 1    | Claytdog       | 8.3           | Rust     |
+| 2    | jtstogel       | ~10           | Rust     |
 | 3    | simple\_parser | 62            | Rust     |
 | 4    | Pkmalloc       | 330           | Java     |
 
