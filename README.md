@@ -95,6 +95,12 @@ You can run the example with:
 cargo r --release --example simple_parser [-- --input <input_file>]
 ```
 
+## Measurement
+
+Be sure to measure your program on my desktop (ask me for login credentials if you don't have them).
+
+Measurements should be made with the `time` utility, and using the `total` time reported (user + system).
+
 ## Installing FlameGraph
 
 Run the following:
