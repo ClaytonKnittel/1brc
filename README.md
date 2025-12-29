@@ -8,7 +8,7 @@ Inspired by https://github.com/gunnarmorling/1brc.
 
 | Rank | Name           | Best Time     | Language |
 |------|----------------|---------------|----------|
-| 1    | Claytdog       | 8.3s          | Rust     |
+| 1    | Claytdog       | 6.9s          | Rust     |
 | 2    | jtstogel       | ~10s          | Rust     |
 | 3    | simple\_parser | 62s           | Rust     |
 | 4    | Pkmalloc       | 236s          | Java     |
