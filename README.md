@@ -6,18 +6,18 @@ Inspired by https://github.com/gunnarmorling/1brc.
 
 ### Single-Threaded Leaderboard
 
-| Rank | Name           | Best Time     | Language |
-|------|----------------|---------------|----------|
-| 1    | Claytdog       | 6.9s          | Rust     |
-| 2    | jtstogel       | ~10s          | Rust     |
-| 3    | 🅱️andrew       | 28s           | Rust     |
-| 4    | simple\_parser | 62s           | Rust     |
-| 5    | Pkmalloc       | 236s          | Java     |
+| Rank | Name          | Best Time | Language |
+| ---- | ------------- | --------- | -------- |
+| 1    | Claytdog      | 6.9s      | Rust     |
+| 2    | jtstogel      | 7.5s      | Rust     |
+| 3    | 🅱️andrew      | 28s       | Rust     |
+| 4    | simple_parser | 62s       | Rust     |
+| 5    | Pkmalloc      | 236s      | Java     |
 
 ### Multi-Threaded Leaderboard
 
 | Rank | Name | Best Time (s) | Language |
-|------|------|---------------|----------|
+| ---- | ---- | ------------- | -------- |
 | 1    | -    | -             | -        |
 
 ## Rules
