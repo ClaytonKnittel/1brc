@@ -10,8 +10,9 @@ Inspired by https://github.com/gunnarmorling/1brc.
 |------|----------------|---------------|----------|
 | 1    | Claytdog       | 6.9s          | Rust     |
 | 2    | jtstogel       | ~10s          | Rust     |
-| 3    | simple\_parser | 62s           | Rust     |
-| 4    | Pkmalloc       | 236s          | Java     |
+| 3    | 🅱️andrew       | 28s           | Rust     |
+| 4    | simple\_parser | 62s           | Rust     |
+| 5    | Pkmalloc       | 236s          | Java     |
 
 ### Multi-Threaded Leaderboard
 
