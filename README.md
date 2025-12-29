@@ -12,7 +12,7 @@ Inspired by https://github.com/gunnarmorling/1brc.
 | 2    | jtstogel      | 7.5s      | Rust     |
 | 3    | 🅱️andrew      | 28s       | Rust     |
 | 4    | simple_parser | 62s       | Rust     |
-| 5    | Pkmalloc      | 236s      | Java     |
+| 5    | Pkmalloc      | 165s      | Java     |
 
 ### Multi-Threaded Leaderboard
 
