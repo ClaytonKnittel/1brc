@@ -2,6 +2,24 @@
 
 Inspired by https://github.com/gunnarmorling/1brc.
 
+# Leaderboard
+
+### Single-Threaded Leaderboard
+
+| Rank | Name           | Best Time     | Language |
+|------|----------------|---------------|----------|
+| 1    | Claytdog       | 6.9s          | Rust     |
+| 2    | jtstogel       | ~10s          | Rust     |
+| 3    | 🅱️andrew       | 28s           | Rust     |
+| 4    | simple\_parser | 62s           | Rust     |
+| 5    | Pkmalloc       | 236s          | Java     |
+
+### Multi-Threaded Leaderboard
+
+| Rank | Name | Best Time (s) | Language |
+|------|------|---------------|----------|
+| 1    | -    | -             | -        |
+
 ## Rules
 
 - All programming languages allowed.
@@ -76,6 +94,12 @@ You can run the example with:
 ```bash
 cargo r --release --example simple_parser [-- --input <input_file>]
 ```
+
+## Measurement
+
+Be sure to measure your program on my desktop (ask me for login credentials if you don't have them).
+
+Measurements should be made with the `time` utility, and using the `total` time reported (user + system).
 
 ## Installing FlameGraph
 
