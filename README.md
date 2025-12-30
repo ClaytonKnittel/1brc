@@ -10,14 +10,14 @@ Inspired by https://github.com/gunnarmorling/1brc.
 |------|----------------|---------------|----------|
 | 1    | Claytdog       | 6.4s          | Rust     |
 | 2    | jtstogel       | 7.3s          | Rust     |
-| 3    | 🅱️andrew       | 19.7s           | Rust     |
+| 3    | 🅱️andrew       | 19.7s         | Rust     |
 | 4    | simple\_parser | 62s           | Rust     |
 | 5    | Pkmalloc       | 165s          | Java     |
 
 ### Multi-Threaded Leaderboard
 
 | Rank | Name | Best Time (s) | Language |
-|------|------|---------------|----------|
+| ---- | ---- | ------------- | -------- |
 | 1    | -    | -             | -        |
 
 ## Rules
