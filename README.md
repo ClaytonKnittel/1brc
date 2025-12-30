@@ -8,7 +8,7 @@ Inspired by https://github.com/gunnarmorling/1brc.
 
 | Rank | Name           | Best Time     | Language |
 |------|----------------|---------------|----------|
-| 1    | Claytdog       | 6.4s          | Rust     |
+| 1    | Claytdog       | 6.1s          | Rust     |
 | 2    | jtstogel       | 7.3s          | Rust     |
 | 3    | 🅱️andrew       | 19.7s         | Rust     |
 | 4    | simple\_parser | 62s           | Rust     |
