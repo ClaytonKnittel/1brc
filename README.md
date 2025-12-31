@@ -16,9 +16,9 @@ Inspired by https://github.com/gunnarmorling/1brc.
 
 ### Multi-Threaded Leaderboard
 
-| Rank | Name | Best Time (s) | Language |
-| ---- | ---- | ------------- | -------- |
-| 1    | -    | -             | -        |
+| Rank | Name     | Best Time | Language |
+| ---- | -------- | --------- | -------- |
+| 1    | Claytdog | 0.67s     | Rust     |
 
 ## Rules
 
