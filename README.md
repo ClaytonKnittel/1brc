@@ -14,7 +14,7 @@ Inspired by https://github.com/gunnarmorling/1brc.
 | 4    | simple\_parser | 62s           | Rust     |
 | 5    | Pkmalloc       | 165s          | Java     |
 
-### Multi-Threaded Leaderboard
+### Multi-Threaded Leaderboard (32 cores)
 
 | Rank | Name     | Best Time | Language |
 | ---- | -------- | --------- | -------- |
