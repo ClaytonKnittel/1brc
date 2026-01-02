@@ -10,7 +10,7 @@ Inspired by https://github.com/gunnarmorling/1brc.
 |------|----------------|---------------|----------|
 | 1    | Claytdog       | 4.98s         | Rust     |
 | 2    | jtstogel       | 7.3s          | Rust     |
-| 3    | 🅱️andrew       | 15.3s         | Rust     |
+| 3    | 🅱️andrew       | 13.0s         | Rust     |
 | 4    | simple\_parser | 62s           | Rust     |
 | 5    | Pkmalloc       | 165s          | Java     |
 
