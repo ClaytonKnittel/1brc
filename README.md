@@ -18,7 +18,7 @@ Inspired by https://github.com/gunnarmorling/1brc.
 
 | Rank | Name     | Best Time | Language |
 | ---- | -------- | --------- | -------- |
-| 1    | Claytdog | 0.67s     | Rust     |
+| 1    | Claytdog | 0.63s     | Rust     |
 
 ## Rules
 
